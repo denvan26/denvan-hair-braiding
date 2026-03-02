@@ -185,26 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (isValid) {
-        // Submit via Formspree
-        const formData = new FormData(bookingForm);
-        const action = bookingForm.getAttribute('action');
-
-        fetch(action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(response => {
-          if (response.ok) {
-            bookingForm.style.display = 'none';
-            document.querySelector('.form-success').classList.add('show');
-          } else {
-            alert('There was an issue submitting the form. Please try again or contact us directly.');
-          }
-        })
-        .catch(() => {
-          alert('There was an issue submitting the form. Please try again or contact us directly.');
-        });
+        // Submit via FormSubmit.co (native form submission)
+        bookingForm.submit();
       } else {
         // Scroll to first error
         const firstError = bookingForm.querySelector('.error');
@@ -269,31 +251,25 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (isValid) {
-        const formData = new FormData(contactForm);
-        const action = contactForm.getAttribute('action');
-
-        fetch(action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(response => {
-          if (response.ok) {
-            contactForm.style.display = 'none';
-            document.querySelector('.form-success').classList.add('show');
-          } else {
-            alert('There was an issue. Please try again or contact us directly.');
-          }
-        })
-        .catch(() => {
-          alert('There was an issue. Please try again or contact us directly.');
-        });
+        // Submit via FormSubmit.co (native form submission)
+        contactForm.submit();
       }
     });
 
     contactForm.querySelectorAll('input, textarea').forEach(field => {
       field.addEventListener('input', () => field.classList.remove('error'));
     });
+  }
+
+  // ---------- Show Success on Redirect Back ----------
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('success') === 'true') {
+    const form = document.getElementById('booking-form') || document.getElementById('contact-form');
+    const successMsg = document.querySelector('.form-success');
+    if (form) form.style.display = 'none';
+    if (successMsg) successMsg.classList.add('show');
+    // Clean URL
+    window.history.replaceState({}, '', window.location.pathname);
   }
 
   // ---------- Smooth Scroll for Anchor Links ----------
