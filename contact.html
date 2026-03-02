@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Denvan Hair Braiding in Dallas-Fort Worth. Call, text, or email to book your mobile braiding appointment. Zelle, Cash App, and Cash accepted.">
+  <title>Contact Us | Denvan Hair Braiding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Denvan <span>Braiding</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="styles.html">Styles</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="book.html">Book Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <a href="book.html" class="btn btn-primary btn-sm nav-cta">Book Appointment</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="styles.html">Styles</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="book.html">Book Now</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="book.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have questions? Want to book? Reach out to us anytime — we'd love to hear from you!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Methods -->
+        <div>
+          <h2 class="mb-3">Get in Touch</h2>
+          <div class="contact-methods">
+            <div class="contact-method fade-in">
+              <div class="method-icon">&#x1F4DE;</div>
+              <div>
+                <h4>Phone / Text</h4>
+                <!-- EDIT: Replace with your real phone number -->
+                <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p>Call or text us to book or ask questions</p>
+              </div>
+            </div>
+            <div class="contact-method fade-in">
+              <div class="method-icon">&#x2709;</div>
+              <div>
+                <h4>Email</h4>
+                <!-- EDIT: Replace with your real email -->
+                <p><a href="mailto:info@denvanhairbraiding.com">info@denvanhairbraiding.com</a></p>
+                <p>We respond within 24 hours</p>
+              </div>
+            </div>
+            <div class="contact-method fade-in">
+              <div class="method-icon">&#x1F4CD;</div>
+              <div>
+                <h4>Service Area</h4>
+                <p>Dallas-Fort Worth Metroplex</p>
+                <p>Mobile service — we come to your location!</p>
+              </div>
+            </div>
+            <div class="contact-method fade-in">
+              <div class="method-icon">&#x1F4F1;</div>
+              <div>
+                <h4>Social Media</h4>
+                <!-- EDIT: Replace # with your real social media links -->
+                <p><a href="#">Instagram</a> &nbsp;|&nbsp; <a href="#">Facebook</a> &nbsp;|&nbsp; <a href="#">TikTok</a></p>
+                <p>Follow us for latest styles and updates</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Methods -->
+          <h3 class="mt-4 mb-2">Accepted Payments</h3>
+          <div class="payment-methods">
+            <div class="payment-card fade-in">
+              <div class="payment-icon">&#x1F4B8;</div>
+              <h4>Zelle</h4>
+              <p>Preferred method</p>
+            </div>
+            <div class="payment-card fade-in">
+              <div class="payment-icon">&#x1F4F1;</div>
+              <h4>Cash App</h4>
+              <p>Fee applies</p>
+            </div>
+            <div class="payment-card fade-in">
+              <div class="payment-icon">&#x1F4B5;</div>
+              <h4>Cash</h4>
+              <p>At appointment</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <!--
+            FORM SETUP: Same as booking form.
+            Replace "YOUR_FORMSPREE_ENDPOINT" with your Formspree URL.
+          -->
+          <form id="contact-form" class="booking-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+            <h3>Send Us a Message</h3>
+
+            <div class="form-group">
+              <label for="contact-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="full_name" placeholder="Your full name" required>
+              <p class="error-message">Please enter your name</p>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+              <p class="error-message">Please enter a valid email</p>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="(123) 456-7890">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject <span class="required">*</span></label>
+              <select id="contact-subject" name="subject" required>
+                <option value="">-- Select a subject --</option>
+                <option value="Booking Inquiry">Booking Inquiry</option>
+                <option value="Pricing Question">Pricing Question</option>
+                <option value="Style Consultation">Style Consultation</option>
+                <option value="General Question">General Question</option>
+                <option value="Other">Other</option>
+              </select>
+              <p class="error-message">Please select a subject</p>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message <span class="required">*</span></label>
+              <textarea id="contact-message" name="message" placeholder="How can we help you?" required></textarea>
+              <p class="error-message">Please enter a message</p>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div class="form-success">
+            <div class="success-icon">&#x2705;</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out! We'll get back to you within 24 hours.</p>
+            <a href="index.html" class="btn btn-primary mt-3">Back to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Policies -->
+  <section class="section policies">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Booking Policies</h2>
+        <p>Please review our policies before booking</p>
+        <div class="divider"></div>
+      </div>
+      <div class="policies-grid">
+        <div class="policy-card fade-in">
+          <div class="policy-icon">&#x1F697;</div>
+          <div>
+            <h4>Mobile Service</h4>
+            <p>We are a mobile hair braiding service. We travel to your location anywhere in the Dallas-Fort Worth area.</p>
+          </div>
+        </div>
+        <div class="policy-card fade-in">
+          <div class="policy-icon">&#x1F4B0;</div>
+          <div>
+            <h4>$50 Deposit Required</h4>
+            <p>A $50 non-refundable deposit is required before the appointment date to confirm your booking.</p>
+          </div>
+        </div>
+        <div class="policy-card fade-in">
+          <div class="policy-icon">&#x2705;</div>
+          <div>
+            <h4>Confirmation</h4>
+            <p>Appointments are confirmed only by phone, text message, or email after deposit is received.</p>
+          </div>
+        </div>
+        <div class="policy-card fade-in">
+          <div class="policy-icon">&#x1F4F8;</div>
+          <div>
+            <h4>Send a Photo</h4>
+            <p>Clients must send a picture of the desired hairstyle before the appointment so we can prepare.</p>
+          </div>
+        </div>
+        <div class="policy-card fade-in">
+          <div class="policy-icon">&#x1F487;</div>
+          <div>
+            <h4>Braiding Hair</h4>
+            <p>Clients buy their own braiding hair. Hair can also be provided upon request at additional cost.</p>
+          </div>
+        </div>
+        <div class="policy-card fade-in">
+          <div class="policy-icon">&#x1F4B3;</div>
+          <div>
+            <h4>Payments Accepted</h4>
+            <p>We accept Zelle (preferred), Cash App (processing fee applies), and Cash.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Get Braided?</h2>
+      <p>Skip the message — book directly and we'll get you on the schedule!</p>
+      <a href="book.html" class="btn btn-white">Book Your Appointment</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Denvan <span>Braiding</span></a>
+          <p>Professional mobile hair braiding service in Dallas-Fort Worth. We bring beautiful braids to your doorstep.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">&#x1F4F7;</a>
+            <a href="#" aria-label="Facebook">&#x1F310;</a>
+            <a href="#" aria-label="TikTok">&#x1F3AC;</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="styles.html">Styles</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="book.html">Book Now</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="book.html">Appointments</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+1234567890">&#x1F4DE; (123) 456-7890</a>
+            <a href="mailto:info@denvanhairbraiding.com">&#x2709; info@denvanhairbraiding.com</a>
+            <a>&#x1F4CD; Dallas-Fort Worth, TX</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Denvan Hair Braiding. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

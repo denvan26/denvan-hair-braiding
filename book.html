@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a hair braiding appointment with Denvan Hair Braiding. Mobile service in Dallas-Fort Worth. Fill out our form or contact us directly.">
+  <title>Book Appointment | Denvan Hair Braiding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Denvan <span>Braiding</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="styles.html">Styles</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="book.html" class="active">Book Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="book.html" class="btn btn-primary btn-sm nav-cta">Book Appointment</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="styles.html">Styles</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="book.html" class="active">Book Now</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="book.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Book Your Appointment</h1>
+      <p>Fill out the form below and we'll confirm your appointment within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section booking-section">
+    <div class="container">
+      <div class="booking-grid">
+
+        <!-- Booking Form -->
+        <div>
+          <!--
+            FORM SETUP INSTRUCTIONS:
+            1. Go to https://formspree.io and create a free account
+            2. Create a new form and copy your form endpoint URL
+            3. Replace "YOUR_FORMSPREE_ENDPOINT" below with your URL
+               Example: https://formspree.io/f/xabcdefg
+          -->
+          <form id="booking-form" class="booking-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" enctype="multipart/form-data">
+            <h3>Request an Appointment</h3>
+
+            <!-- Name & Email Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="full-name" name="full_name" placeholder="Your full name" required>
+                <p class="error-message">Please enter your name</p>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <p class="error-message">Please enter a valid email</p>
+              </div>
+            </div>
+
+            <!-- Phone & City Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                <p class="error-message">Please enter a valid phone number</p>
+              </div>
+              <div class="form-group">
+                <label for="city">City / Location (DFW) <span class="required">*</span></label>
+                <input type="text" id="city" name="city" placeholder="e.g. Dallas, Arlington, Plano" required>
+                <p class="error-message">Please enter your city</p>
+              </div>
+            </div>
+
+            <!-- Desired Style -->
+            <div class="form-group">
+              <label for="style">Desired Style <span class="required">*</span></label>
+              <select id="style" name="desired_style" required>
+                <option value="">-- Select a style --</option>
+                <option value="Straight Back Cornrows">Straight Back Cornrows ($80 - $120)</option>
+                <option value="Cornrow Designs">Cornrow Designs &amp; Patterns ($100 - $180)</option>
+                <option value="Stitch Cornrows">Stitch Cornrows ($100 - $150)</option>
+                <option value="Small Knotless Braids">Small Knotless Braids ($200 - $300)</option>
+                <option value="Medium Knotless Braids">Medium Knotless Braids ($150 - $220)</option>
+                <option value="Large Knotless Braids">Large / Jumbo Knotless ($120 - $180)</option>
+                <option value="Small Box Braids">Small Box Braids ($180 - $280)</option>
+                <option value="Medium Box Braids">Medium Box Braids ($140 - $220)</option>
+                <option value="Passion Twists">Passion Twists ($150 - $220)</option>
+                <option value="Senegalese Twists">Senegalese Twists ($140 - $200)</option>
+                <option value="Kids Cornrows">Kids Cornrows ($50 - $100)</option>
+                <option value="Kids Box Braids">Kids Box Braids / Twists ($70 - $120)</option>
+                <option value="Feed-in Braids">Feed-in Braids ($120 - $200)</option>
+                <option value="Feed-in Ponytail">Feed-in Ponytail ($100 - $160)</option>
+                <option value="Boho Knotless Braids">Boho Knotless Braids ($200 - $350)</option>
+                <option value="Boho Box Braids">Boho Box Braids ($180 - $300)</option>
+                <option value="Lemonade Braids">Lemonade Braids ($150 - $250)</option>
+                <option value="Lemonade with Designs">Lemonade with Designs ($180 - $280)</option>
+                <option value="Butterfly Locs">Butterfly Locs ($150 - $250)</option>
+                <option value="Faux Locs">Faux Locs ($160 - $260)</option>
+                <option value="Other">Other (describe in message)</option>
+              </select>
+              <p class="error-message">Please select a style</p>
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="form-group">
+              <label for="date">Preferred Appointment Date <span class="required">*</span></label>
+              <input type="date" id="date" name="preferred_date" required>
+              <p class="error-message">Please select a future date</p>
+            </div>
+
+            <!-- Photo Upload -->
+            <div class="form-group">
+              <label>Upload Photo of Desired Hairstyle</label>
+              <div class="file-upload">
+                <input type="file" name="hairstyle_photo" accept="image/*">
+                <div class="upload-icon">&#x1F4F7;</div>
+                <p>Click or drag to upload a photo<br><small>JPG, PNG, or HEIC (max 10MB)</small></p>
+                <div class="file-name"></div>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">Additional Details / Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your desired style, hair length, any special requests, etc."></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Submit Appointment Request</button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div class="form-success">
+            <div class="success-icon">&#x2705;</div>
+            <h3>Appointment Request Sent!</h3>
+            <p>Thank you! We'll review your request and confirm your appointment within 24 hours via phone, text, or email. Remember, a $50 deposit is required to secure your booking.</p>
+            <a href="index.html" class="btn btn-primary mt-3">Back to Home</a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="booking-sidebar">
+          <div class="sidebar-card highlight">
+            <h4>&#x1F4B0; Deposit Required</h4>
+            <ul>
+              <li><span class="bullet">&#x2022;</span> $50 non-refundable deposit required before appointment date</li>
+              <li><span class="bullet">&#x2022;</span> Appointment is confirmed only after deposit is received</li>
+              <li><span class="bullet">&#x2022;</span> Deposit goes toward your total service cost</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>&#x1F4CB; Booking Policies</h4>
+            <ul>
+              <li><span class="bullet">&#x2022;</span> Mobile service — we travel to your location in DFW</li>
+              <li><span class="bullet">&#x2022;</span> Confirmed by phone, text, or email only</li>
+              <li><span class="bullet">&#x2022;</span> Must send a photo of desired hairstyle</li>
+              <li><span class="bullet">&#x2022;</span> Clients buy their own hair, or hair can be provided upon request</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>&#x1F4B3; Accepted Payments</h4>
+            <ul>
+              <li><span class="bullet">&#x2022;</span> <strong>Zelle</strong> — preferred method</li>
+              <li><span class="bullet">&#x2022;</span> <strong>Cash App</strong> — processing fee applies</li>
+              <li><span class="bullet">&#x2022;</span> <strong>Cash</strong> — accepted at appointment</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>&#x1F4DE; Contact Us Directly</h4>
+            <ul>
+              <li><span class="bullet">&#x2022;</span> Call/Text: <a href="tel:+1234567890" style="color: var(--primary);">(123) 456-7890</a></li>
+              <li><span class="bullet">&#x2022;</span> Email: <a href="mailto:info@denvanhairbraiding.com" style="color: var(--primary);">info@denvanhairbraiding.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Denvan <span>Braiding</span></a>
+          <p>Professional mobile hair braiding service in Dallas-Fort Worth. We bring beautiful braids to your doorstep.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">&#x1F4F7;</a>
+            <a href="#" aria-label="Facebook">&#x1F310;</a>
+            <a href="#" aria-label="TikTok">&#x1F3AC;</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="styles.html">Styles</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="book.html">Book Now</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="book.html">Appointments</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+1234567890">&#x1F4DE; (123) 456-7890</a>
+            <a href="mailto:info@denvanhairbraiding.com">&#x2709; info@denvanhairbraiding.com</a>
+            <a>&#x1F4CD; Dallas-Fort Worth, TX</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Denvan Hair Braiding. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
