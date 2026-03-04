@@ -62,7 +62,7 @@ Denvan Hair Braiding offers expert braiding services from a Frisco, TX salon and
 
 - **Phone:** (202) 415-9373
 - **Email:** denvanllc@gmail.com
-- **Salon:** Suite Salon, 11990 Coit Rd Suite #100, Frisco, TX 75035
+- **Salon:** Suite Salon, 11990 Coit Rd Suite 2, Frisco, TX 75035
 - **Mobile:** Available across DFW
 - **WhatsApp:** [Chat with us](https://wa.me/12024159373)
 
