@@ -1723,8 +1723,8 @@ p {
 .whatsapp-tooltip {
   background: var(--white);
   color: var(--dark);
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
   font-size: 0.82rem;
   font-weight: 500;
   box-shadow: var(--shadow-md);
@@ -1733,6 +1733,15 @@ p {
   transform: translateX(10px);
   transition: all 0.3s ease;
   pointer-events: none;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.whatsapp-tooltip small {
+  display: block;
+  color: var(--gray);
+  font-size: 0.72rem;
+  font-weight: 400;
 }
 
 .whatsapp-float:hover .whatsapp-tooltip {
