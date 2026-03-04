@@ -12,7 +12,8 @@ Denvan Hair Braiding offers expert braiding services from a Frisco, TX salon and
 |------|-------------|
 | `index.html` | Homepage with featured styles, how it works, booking policies |
 | `styles.html` | Style catalog with 20 braiding styles, descriptions, and lightbox |
-| `gallery.html` | Photo gallery with 37 curated images across 10 categories, starting prices, and "Send This Style" WhatsApp booking |
+| `gallery.html` | Photo gallery with 60+ images across 13 categories, starting prices, and "Send This Style" WhatsApp booking |
+| `blog.html` | Braiding style guide with descriptions, care tips, install times, and booking links for every style |
 | `pricing.html` | Pricing overview with payment methods (detailed prices in PRICING.md) |
 | `book.html` | Booking form via FormSubmit.co |
 | `shop.html` | Braiding hair and hair care products shop |
