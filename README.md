@@ -1,2 +1,1 @@
-# dhair-site
-denvan-hair
+# denvan-hair-braiding
